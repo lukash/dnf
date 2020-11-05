@@ -445,6 +445,7 @@ class TestSack(hawkey.test.TestSackMixin, dnf.sack.Sack):
                                arch=hawkey.test.FIXED_ARCH,
                                pkgcls=dnf.package.Package,
                                pkginitval=base,
+                               rootdir=base.conf.installroot,
                                make_cache_dir=True)
 
 
